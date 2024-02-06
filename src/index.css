@@ -68,7 +68,7 @@ button:focus-visible {
 } */
 body{
   text-align: center;
-  background-image: url(imageBG.jpg);
+  background-image: url("imageBG.jpg");
   background-size: cover;
   color:white
 }
