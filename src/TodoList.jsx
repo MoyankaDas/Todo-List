@@ -91,7 +91,7 @@ export default function TodoList() {
                     {
                         todo.map((el) => {
                             return <li style={{marginRight:"1rem",marginBottom:"1rem" , color:"white", border:"3px solid black", padding:"0.5rem", borderRadius:"1.5rem",backgroundColor:"#122744"}} key={el.id} >
-                                {el.isImportant == true ? <span style={{ fontWeight: "900", color: "red" }}>{el.task}</span> : <span>{el.task}</span>}
+                                {el.isImportant == true ? <span style={{ fontSize:"1.5rem", fontWeight: "600", color: "red" }}>{el.task}</span> : <span style={{fontSize:"1.5rem"}}>{el.task}</span>}
                                 &nbsp;&nbsp;&nbsp;
                                 <Button onClick={()=>handleDone(el.id)}>{el.isDone==true?<CheckCircleIcon style={{color:"#7CFC00"}}/>:<TaskAltIcon style={{color:"#7CFC00"}}/>}</Button>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
